@@ -1,3 +1,14 @@
 venv/
 .env
 __pycache__/
+
+# Fichiers générés contenant des données de candidats (exports Excel)
+exports/
+
+# Paramètres Claude Code locaux à la machine du développeur
+.claude/settings.local.json
+
+# Scripts de debug/inspection ponctuels contenant des données réelles codées en dur
+debug_booking.py
+debug_trabelsi.py
+inspect_user.py
