@@ -6,6 +6,8 @@ aux questions sur les candidats, demandes, entretiens et commandes, et peut exé
 création/modification — **toujours ancré dans les données réelles de MongoDB**, jamais sur ce que le
 modèle "croit savoir".
 
+> 🔗 **Backend :** [jaz56/admin-backend](https://github.com/jaz56/admin-backend) · **Frontend :** [jaz56/admin-front](https://github.com/jaz56/admin-front)
+
 ## Principe de fonctionnement
 
 Le LLM (modèle `gemma4:31b-cloud` via [Ollama Cloud](https://ollama.com)) ne répond jamais directement
@@ -191,3 +193,14 @@ chatbot-immigration/
 ├── check_db.py / inspect_*.py / test_*.py   # Scripts de debug ponctuels (voir ci-dessus)
 └── exports/              # Fichiers Excel générés à la demande (ignoré par git)
 ```
+
+
+## 🔗 Dépôts du projet
+
+Ce dépôt fait partie de la **plateforme d'administration**, composée de trois dépôts :
+
+| Partie | Rôle | Dépôt |
+|---|---|---|
+| Backend | API Spring Boot + MongoDB + JWT (port `8083`) | [jaz56/admin-backend](https://github.com/jaz56/admin-backend) |
+| Frontend | Interface d'administration Angular 21 (port `4200`) | [jaz56/admin-front](https://github.com/jaz56/admin-front) |
+| Chatbot | Assistant IA FastAPI + Ollama (port `8000`) | [jaz56/chatbot-immigration](https://github.com/jaz56/chatbot-immigration) |
